@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Details for conference {{ conference.title }}</p>
+<p>{{ conference.date.strftime('%m/%d/%Y') }}</p>
+<p>{{ "$%.2f"|format(conference.ticket_cost) }}</p>
+{% endblock %}
